@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to add CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internalCSS{
+            color: red;
+            font-style: italic;
+        }
+    </style>
+  </head>
+  <body>
+    <h3>There are 3 ways</h3>
+    <ul>
+      <p class="externalCSS">
+        <strong>External CSS: </strong>creating new file with .css extention and
+        linking that file with html. The "link" element is used in an html
+        document to tell the browser where to find the css file used to style
+        the page.
+        <ul><li>The link use 3 attributes href : specifies the path, type : specifies the type of the document and the value should be text/css, 
+			rel : specifies the relationship between the html page and the file it is linked to. </li>
+            <li>We can use same link(stylesheet) in another html file. We can use more than one css stylesheet, then priority will be given to last property</li></ul>
+      </p>
+      <p class="internalCSS"><strong>Internal CSS:</strong>
+        we can include css rules within a html page by placing them inside a "style" element which usually sits inside the "head" element of the page.
+        we can also add style element after closing "body" tag but not recommended. we can add type</p>
+      <p><strong>Inline CSS:</strong>style applied directly to an html element using the style attribute and style can be added to any element within the opening tag using style attribute. it's applicable for only to that element and we can add more than one property.</p>
+      <p style="color:blue; font-size: 50px;">Inline CSS added</p>
+    </ul>
+  </body>
+</html>
